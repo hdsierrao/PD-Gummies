@@ -72,6 +72,82 @@ div nav a:hover{
 input, textarea { 
 	font-family: FontAwesome, Verdana, sans-serif;
 }
+.animaciones{
+    background-image: url(../img/fondo_gomas2.jpg);
+    background-size: cover;
+    background-image: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,1)), url(../img/fondo_gomas2.jpg);
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    color: indigo;
+    font-size: 50px;
+    display: grid;
+    grid-template-areas: 
+    "titulito titulito"
+    "a1 a1"
+    "a5 a6"
+    "a7 a7";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4, 1fr);
+    line-height: 150px;
+}
+.titulito{
+    grid-area: titulito;
+    transition: color 3s;
+}
+.titulito:hover{
+    color: blueviolet;
+}
+.animacion{
+    width: auto;
+    height: auto;
+    background-image: url(../img/fondo_gomas1.jpg);
+    background-size: cover;
+    padding: 5px;
+    margin: 5px;
+    color: black;
+    font-size: 50px;
+    font-family: monospace;
+    border-radius: 25%;
+}
+.a1{
+    grid-area: a1;
+    transition: all 5s;
+}
+.a1:active{
+    transform: scale(0.5);
+    background-image: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,1)), url(../img/fondo_gomas1.jpg);
+}
+.a5{
+    grid-area: a5;
+}
+.a6{
+    grid-area: a6;
+}
+.a7{
+    grid-area: a7;
+    animation-name: rotacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+}
+@keyframes rotacion{
+    0% {
+        transform: rotateY(0deg);
+    }
+    25% {
+        transform: rotateY(90deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    75% {
+        transform: rotateY(270deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
 .principal{
     background-image: url(../img/fondo_espacio.jpg);
     background-position: cover;

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="shortcut icon" href="img/logico.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>PD Gummies</title>
 </head>
 <body>
@@ -14,7 +16,7 @@
         <div class="logo">
             <img width="120px" height="100px" src="img/logo2.png" alt="logo pd gummies">
         </div>
-        <div class="titulo">
+        <div class="animate__animated animate__bounce titulo">
             <h1>PD Gummies</h1>
         </div>
         <div class="seleccion">
@@ -36,9 +38,17 @@
         </div>
         <div class="carrito">
             <i class="fa-solid fa-cart-plus"></i>
-        </div>
-        
+        </div>  
     </header>
+    <section class="animaciones">
+        <div class="titulito">
+            <h1>Animaciones</h1>
+        </div>
+        <div class="animacion a1">Gomitas</div>
+        <div data-aos="fade-up-right" class="animacion a5">Tortas</div>
+        <div data-aos="fade-up-left" class="animacion a6">Postres</div>
+        <div class="animacion a7">Chicles</div>
+    </section>
     <main class="principal">
         <div class="elemento elemento1">
             <h2>Gomitas</h2>
@@ -83,5 +93,9 @@
     <a class="subir" href="#">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
