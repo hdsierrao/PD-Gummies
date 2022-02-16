@@ -1,0 +1,306 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100%;
+}
+.cabeza{
+    background-image: url(../img/fono_degradado.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display: grid;
+    grid-template-areas: 
+    "logo titulo titulo carrito"
+    "logo buscar seleccion carrito";
+    grid-template-columns: 20% 30% 35% 15%;
+    grid-template-rows: 50% 50%;
+    min-height: 80px;
+    align-items: center;
+}
+.logo{
+    grid-area: logo;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    margin-left: 50px;
+}
+.titulo{
+    grid-area: titulo;
+    text-align: center;
+    color: indigo;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.carrito{
+    grid-area: carrito;
+    margin: 6px;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+.carrito:hover{
+    color: white;
+}
+.buscar{
+    grid-area: buscar;
+}
+.seleccion{
+    grid-area: seleccion;
+}
+div ul li{
+    list-style: none;
+    display: inline-block;
+}
+div nav a{
+    color: white;
+    text-decoration: none;
+    
+}
+div nav a:hover{
+    color: black;
+}
+.cabeza ul li{
+    margin: 10px;
+    font-size: 20px;
+}
+input, textarea { 
+	font-family: FontAwesome, Verdana, sans-serif;
+}
+.principal{
+    background-image: url(../img/fondo_espacio.jpg);
+    background-position: cover;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    min-height: 250px;
+}
+.principal div{
+    border: 2px solid;
+    border-radius: 15%;
+    margin: 2px;
+}
+.principal h2{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.principal .elemento:hover{
+    transform: scale(1.05);
+    transition: all 1s;
+}
+.principal img{
+    width: 100%;
+    display: block;
+    border-radius: 15%;
+}
+img:hover{
+    filter: grayscale(80%);
+    transition: all 2s;
+}
+.principal .elemento1{
+    background-image: url(../img/gomitas.jpg);
+    background-position: center;
+}
+.principal .elemento2{
+    background-image: url(../img/dulces.jpg);
+    background-position: center;
+}
+.principal .elemento3{
+    background-image: url(../img/fiesta.jpg);
+    background-position: center;
+}
+.principal .elemento4{
+    background-image: url(../img/social.jpg);
+    background-position: center;
+}
+.pie{
+    background-image: url(../img/fono_degradado.jpg);
+    background-position: bottom;
+    display: grid;
+    grid-template-areas: 
+    "redes logopie informacion"
+    "copyright logopie informacion";
+    grid-template-columns: 40% 25% 35%;
+    grid-template-rows: 80% 20%;
+    height: 100%;
+}
+.redes{
+    grid-area: redes;
+    margin-left: 15px;
+}
+.logopie{
+    grid-area: logopie;
+    margin-left: 80px;
+}
+.informacion{
+    grid-area: informacion;
+    margin-left: 140px;
+}
+.copyright{
+    grid-area: copyright;
+    margin-left: 15px;
+}
+.pie li{
+    margin: 6px;
+    font-size: 50px;
+    text-align: center;
+}
+.subir{
+    height: 50px;
+    width: 50px;
+    background-color: purple;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+}
+.subir i{
+    color: white;
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: bold;
+    text-shadow: 0 0 10px black;
+}
+@media only screen and (max-width: 480px){
+.cabeza{
+    grid-template-areas: "logo seleccion";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+}
+.logo{
+    margin: 20px;
+}
+.cabeza ul li{
+    font-size: 15px;
+}
+.carrito{
+    display: none;
+}
+.buscar{
+    display: none;
+}
+.titulo{
+    display: none;
+}
+.principal{
+    grid-template-columns: 1fr;
+}
+.pie{
+    grid-template-areas: "redes informacion";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+}
+.pie h3{
+    display: none;
+}
+.redes{
+    margin: 0px;
+}
+.informacion{
+    margin-left: 0px;
+    margin-top: 5px;
+}
+.copyright{
+    display: none;
+}
+.logopie{
+    display: none;
+}
+}
+@media only screen and (min-width: 481px) and (max-width: 640px){
+    .cabeza{
+        grid-template-areas: "logo seleccion";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr;
+    }
+    .logo{
+        margin: 20px;
+    }
+    .cabeza ul li{
+        font-size: 25px;
+    }
+    .carrito{
+        display: none;
+    }
+    .buscar{
+        display: none;
+    }
+    .titulo{
+        display: none;
+    }
+    .principal{
+        grid-template-columns: 1fr 1fr;
+    }
+    .pie{
+        grid-template-areas: "redes informacion logopie";
+        grid-template-columns: 35% 30% 35%;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .pie li{
+        font-size: 30px;
+    }
+    .pie h3{
+        display: none;
+    }
+    .informacion{
+        margin: 0px;
+    }
+    .copyright{
+        display: none;
+    }   
+}
+@media only screen and (min-width: 641px) and (max-width: 840px){
+    .cabeza{
+        grid-template-areas: "logo titulo seleccion";
+        grid-template-columns: 20% 40% 40%;
+        grid-template-rows: 1fr;
+    }
+    .logo{
+        margin: 20px;
+    }
+    .cabeza h1{
+        font-size: 30px;
+    }
+    .cabeza ul li{
+        font-size: 25px;
+    }
+    .carrito{
+        display: none;
+    }
+    .buscar{
+        display: none;
+    }
+    .principal{
+        grid-template-columns: 1fr 1fr;
+    }
+    .pie{
+        grid-template-areas: "redes informacion logopie";
+        grid-template-columns: 35% 30% 35%;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .pie li{
+        font-size: 30px;
+    }
+    .pie h3{
+        display: none;
+    }
+    .informacion{
+        margin: 0px;
+    }
+    .copyright{
+        display: none;
+    }   
+}
