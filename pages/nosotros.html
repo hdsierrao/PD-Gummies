@@ -4,55 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../img/logico.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Nosotros</title>
 </head>
 <body>
-    <header class="cabeza">
-        <div class="logo">
-            <img width="120px" height="100px" src="../img/logo2.png" alt="logo pd gummies">
+    <!--Header Inicio-->
+    <!--Navbar Inicio-->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+            <img width="80" height="80" src="../img/logo2.png" alt="Logo Pd gummies">
+            PD Gummies
+        </a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../spages/contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-        <div class="titulo">
-            <h1>PD Gummies</h1>
-        </div>
-        <div class="seleccion">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="../pages/productos.html">Productos</a></li>
-                    <li><a href="../pages/servicios.html">Servicios</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="buscar">
-            <form action="">
-                <input placeholder="&#xf002"; type="text" id="busqueda" name="busqueda_en_pag">
-                <button type="submit">Buscar</button>
-            </form>
-        </div>
-        <div class="carrito">
-            <i class="fa-solid fa-cart-plus"></i>
-        </div>
-        
-    </header>
-    <main class="principal">
-        <div class="elemento elemento1">
-            <h2>Gomitas</h2>
-        </div>
-        <div class="elemento elemento2">
-            <h2>Dulces</h2>
-        </div>
-        <div class="elemento elemento3">
-            <h2>Eventos</h2>
-        </div>
-        <div class="elemento elemento4">
-            <h2>Social</h2>
+        <!-- Navbar Search -->
+        <nav class="navbar navbar-expand-sm ">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar en esta página..." aria-label="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
+              </form>
+        </nav>
+    </nav>
+    <!--Navbar Fin-->
+    <!-- Banner -->
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row col-6 slogan">
+                <h1>¡Las mejores gomas del mercado!</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda distinctio nihil commodi voluptatem non! Quaerat enim et nam architecto quae? Odio amet, voluptatem optio eaque architecto eius laudantium facilis eos?</p>
+                <div class="img-productos">
+                    ¡Disfruta de nuestros productos!
+                </div>
+            </div>
         </div>    
-    </main>
+    </div>
+    <!--Banner Fin-->
+    <!--Header Fin-->
     <footer class="pie">
         <div class="redes">
             <nav>
@@ -83,5 +102,10 @@
     <a class="subir" href="#">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
+
+    <!--Scripts bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script><!--Header Inicio-->
 </body>
 </html>
